@@ -14,8 +14,10 @@ SmartStart AI empowers small businesses, freelancers, and entrepreneurs with acc
   2. **Smart Customer Chatbots:** 24/7 intelligent customer inquiry assistants.
   3. **AI Content & Marketing:** Brand-aligned templates and marketing copy generation.
 - **Contact & Inquiries Section:** Clear contact details (sample email: `hello@smartstartai.example.com`) and an interactive message form.
+- **Interactive SmartBot (Bottom-Right Corner):** A floating AI assistant widget with typing animations, quick suggestion chips, and instant answers about services, pricing, and contact info.
 - **100% Responsive Design:** Optimized for mobile phones, tablets, and desktop displays using CSS Grid and Flexbox.
 - **Pure Web Technologies:** Built with zero paid dependencies or complicated build tools.
+
 
 ---
 

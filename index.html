@@ -233,6 +233,66 @@
     </div>
   </footer>
 
+  <!-- Floating Chatbot Widget (Bottom-Right Corner) -->
+  <aside class="chatbot-widget" id="chatbot-widget" aria-label="SmartStart AI Chatbot Assistant">
+    <!-- Chat Launcher Button -->
+    <button class="chatbot-launcher" id="chatbot-launcher" aria-label="Open AI Chatbot">
+      <span class="launcher-icon chat-open-icon">💬</span>
+      <span class="launcher-icon chat-close-icon" style="display: none;">✕</span>
+      <span class="launcher-badge" id="launcher-badge">1</span>
+      <span class="launcher-tooltip">Ask SmartBot! ✨</span>
+    </button>
+
+    <!-- Chat Dialog Window -->
+    <div class="chatbot-window" id="chatbot-window" role="dialog" aria-modal="true" aria-hidden="true">
+      <!-- Window Header -->
+      <header class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">🤖</div>
+          <div>
+            <h4 class="chatbot-title">SmartBot</h4>
+            <div class="chatbot-status">
+              <span class="status-dot"></span> Online • AI Assistant
+            </div>
+          </div>
+        </div>
+        <button class="chatbot-close-btn" id="chatbot-close-btn" aria-label="Close Chat">✕</button>
+      </header>
+
+      <!-- Messages Stream -->
+      <div class="chatbot-messages" id="chatbot-messages">
+        <!-- Initial welcome message from bot -->
+        <div class="chat-message bot-message">
+          <div class="chat-bubble">
+            👋 Hi there! I'm <strong>SmartBot</strong>, your SmartStart AI virtual guide. How can I help your business today?
+          </div>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div class="chatbot-suggestions" id="chatbot-suggestions">
+        <button type="button" class="suggestion-chip" data-question="What services do you offer?">What services do you offer?</button>
+        <button type="button" class="suggestion-chip" data-question="How much does it cost?">How much does it cost?</button>
+        <button type="button" class="suggestion-chip" data-question="How can I contact the team?">How to contact you?</button>
+      </div>
+
+      <!-- Input Area -->
+      <form class="chatbot-input-area" id="chatbot-form">
+        <input 
+          type="text" 
+          id="chatbot-input" 
+          placeholder="Ask a question about AI..." 
+          autocomplete="off" 
+          required
+        />
+        <button type="submit" class="chatbot-send-btn" id="chatbot-send-btn" aria-label="Send message">
+          <span>➤</span>
+        </button>
+      </form>
+    </div>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>

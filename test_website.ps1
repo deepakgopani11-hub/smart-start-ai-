@@ -21,7 +21,11 @@ $tests = @(
   @{ Name = "11. Responsive CSS Grid & Flexbox implemented"; Pass = ($css.Contains("display: grid") -and $css.Contains("display: flex")) },
   @{ Name = "12. Mobile responsive media queries present"; Pass = ($css.Contains("@media (max-width: 768px)")) },
   @{ Name = "13. JavaScript handles mobile menu toggle"; Pass = ($js.Contains("menu-toggle") -and $js.Contains("classList.toggle")) },
-  @{ Name = "14. JavaScript handles form submit & user feedback"; Pass = ($js.Contains("contact-form") -and $js.Contains("feedbackBox")) }
+  @{ Name = "14. JavaScript handles form submit & user feedback"; Pass = ($js.Contains("contact-form") -and $js.Contains("feedbackBox")) },
+  @{ Name = "15. Chatbot widget markup in bottom-right corner"; Pass = ($html.Contains("id=`"chatbot-launcher`"") -and $html.Contains("id=`"chatbot-window`"")) },
+  @{ Name = "16. Chatbot CSS fixed styling & animations"; Pass = ($css.Contains(".chatbot-widget") -and $css.Contains("position: fixed") -and $css.Contains("right: 24px")) },
+  @{ Name = "17. Chatbot JS toggle & input handling"; Pass = ($js.Contains("chatbotLauncher") -and $js.Contains("toggleChatbot")) },
+  @{ Name = "18. Chatbot AI knowledge response engine"; Pass = ($js.Contains("getBotResponse") -and $js.Contains("showTypingIndicator")) }
 )
 
 $passedCount = 0
